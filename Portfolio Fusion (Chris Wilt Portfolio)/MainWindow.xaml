@@ -5,8 +5,68 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Portfolio_Fusion__Chris_Wilt_Portfolio_"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Christopher Wilt's Portfolio" Height="720" Width="1280"
+        WindowStyle = "SingleBorderWindow"
+        ResizeMode="CanResize"
+        Background="Transparent"
+        AllowsTransparency="False"
+        MinWidth="920"
+        MinHeight="600"
+        WindowStartupLocation="CenterScreen"
+        UseLayoutRounding="True">
+
+  
+    <Border Background="#272537">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        <TextBlock Text="My Portfolio"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Foreground="White"
+                   FontSize="22"
+                   Margin="25,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Home"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource ButtonStyle1}"/>
+                <RadioButton Content="My Projects"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource ButtonStyle1}"/>
+                <RadioButton Content="My Git Hub"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource ButtonStyle1}"/>
+                <RadioButton Content="About Me"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource ButtonStyle1}"/>
+            </StackPanel>
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10">
+                
+                
+            </ContentControl>
+            
+            
+        </Grid>
+
+
+    </Border>
 </Window>
